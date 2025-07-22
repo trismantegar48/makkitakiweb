@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kelurahan Watang Bacukiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahkan transisi untuk efek halus */
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        /* Warna teks saat aktif */
+        .nav-link.active {
+            color: #b6e070;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 pt-14">
+    <header class="fixed top-0 left-0 right-0 bg-[#265322] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
+    <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+            <img 
+                alt="Logo Parepare" 
+                class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
+                src="images/logoparepare.png" 
+            />
+            <div>
+                <h1 class="text-[#b6e070] text-xl font-bold tracking-wider">Kelurahan Watang Bacukiki</h1>
+                <p class="text-white text-sm opacity-80">Kota Parepare</p>
+            </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav id="nav-menu" class="hidden md:block">
+            <ul class="flex flex-col md:flex-row md:space-x-4 text-white">
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="index.html">Home</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="profilkelurahan.html">Profil Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="infografis.html">Infografis</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="umkm.html">UMKM</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="potensikelurahan.html">Potensi Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+    });
+</script>
+
+
+<section class="relative">
+  <img alt="UMKM Watang Bacukiki" class="w-full h-96 object-cover" height="600" src="imageumkm/umkmcover.jpg" width="1920"/>
+  <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white p-6">
+    <h1 class="text-4xl md:text-5xl font-bold transition-transform transform hover:scale-105 text-[#b6e070]">
+      UMKM Kelurahan Watang Bacukiki
+    </h1>
+    <p class="mt-4 text-lg md:text-xl transition-opacity duration-300 hover:opacity-80">
+      Mengenal Pelaku Usaha Mikro Kecil Menengah di Watang Bacukiki
+    </p>
+  </div>
+</section>
+
+    <main>
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 text-[#265322]">UMKM Kelurahan Watang Bacukiki</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer transition-all" onclick="openUmkmModal(0)">
+          <img src="imageumkm/umkm1.jpg" alt="UMKM 1" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-[#265322]">Usaha Pin dan Gantungan Kunci</h3>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer transition-all" onclick="openUmkmModal(1)">
+          <img src="imageumkm/umkm2.jpg" alt="UMKM 2" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-[#265322]">Usaha Kacang Sembunyi</h3>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer transition-all" onclick="openUmkmModal(2)">
+          <img src="imageumkm/umkm3.jpg" alt="UMKM 3" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-[#265322]">Usaha Sarung Badik</h3>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer transition-all" onclick="openUmkmModal(3)">
+          <img src="imageumkm/umkm4.jpg" alt="UMKM 4" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-[#265322]">Usaha Kacang Mete</h3>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer transition-all" onclick="openUmkmModal(4)">
+          <img src="imageumkm/umkm5.jpg" alt="UMKM 5" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-[#265322]">Usaha Ikan Bandeng Tanpa Tulang</h3>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer transition-all" onclick="openUmkmModal(5)">
+          <img src="imageumkm/umkm6.jpg" alt="UMKM 6" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-[#265322]">Usaha Kue Kering dan Kue Basah</h3>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="flex justify-center"></div>
+        <div class="bg-white rounded-xl shadow hover:shadow-lg cursor-pointer transition-all" onclick="openUmkmModal(6)">
+          <img src="imageumkm/umkm7.jpg" alt="UMKM 7" class="w-full h-48 object-cover rounded-t-xl" />
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-[#265322]">Budidaya Ikan Nila</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="umkmModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-xl shadow-lg max-w-md w-full p-6 relative">
+    <button onclick="closeUmkmModal()" class="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-2xl font-bold">&times;</button>
+    <img id="umkmModalImg" src="" alt="" class="w-full h-48 object-cover rounded-lg mb-4" />
+    <h3 id="umkmModalTitle" class="text-2xl font-bold mb-2 text-[#265322]"></h3>
+    <p id="umkmModalDesc" class="text-gray-700 text-justify"></p>
+    <p id="umkmModalHarga" class="text-green-700 font-semibold mb-2"></p>
+    <a id="umkmModalWa" href="#" target="_blank" class="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-green-600 transition-all" style="display:none;">
+      Hubungi via WhatsApp
+    </a>
+  </div>
+</div>
+  </section>
+</main>
+<script>
+  // Data UMKM
+  const umkmData = [
+    {
+      title: "Usaha Pin dan Gantungan Kunci",
+      img: "imageumkm/umkm1.jpg",
+      desc: "UMKM ini bergerak di bidang kerajinan tangan dengan memproduksi berbagai macam pin dan gantungan kunci unik yang bisa disesuaikan dengan desain keinginan pelanggan. Produk ini cocok sebagai souvenir, merchandise acara, atau hadiah personal dengan harga terjangkau dan kualitas terjamin.",
+      wa: "6281244344640", // Nomor WhatsApp untuk UMKM 1
+      harga: "Rp 5.000 - 10.000" // Harga untuk UMKM 1
+    },
+    {
+      title: "Usaha Kacang Sembunyi",
+      img: "imageumkm/umkm2.jpg",
+      desc: "UMKM ini merupakan camilan tradisional khas dengan cita rasa gurih dan manis. Dibuat dari kacang tanah yang dibungkus tipis adonan tepung kemudian digoreng hingga renyah. Cocok sebagai teman bersantai atau suguhan tamu.",
+      wa: "62882021579043", // Nomor WhatsApp untuk UMKM 2
+      harga: "Rp 70.000 / kg" // Harga untuk UMKM 2
+    },
+    {
+      title: "Usaha Sarung Badik",
+      img: "imageumkm/umkm3.jpg",
+      desc: "UMKM ini memproduksi sarung badik khas dengan motif tradisional yang dibuat secara manual oleh pengrajin lokal. Produk ini tidak hanya sebagai pelengkap senjata tradisional tetapi juga sebagai karya seni yang memiliki nilai budaya tinggi.",
+      wa: "6281242441411", // Nomor WhatsApp untuk UMKM 3
+      harga: "Rp 300.000 - Rp 7.000.000" // Harga untuk UMKM 3
+    },
+    {
+      title: "Usaha Kacang Mete", 
+      img: "imageumkm/umkm4.jpg",
+      desc: "UMKM ini menyediakan kacang mete mentah berkualitas. Kacang mete yang ditawarkan masih dalam kondisi mentah, sehingga cocok bagi pembeli yang ingin mengolah sendiri sesuai selera, baik untuk digoreng, dipanggang, atau sebagai bahan tambahan makanan dan kue.",
+      wa: "6282292514618", // Nomor WhatsApp untuk UMKM 4 
+      harga: "Rp 130.000 / kg" // Harga untuk UMKM 4
+    },
+    {
+      title: "Usaha Ikan Bandeng Tanpa Tulang",
+      img: "imageumkm/umkm5.jpg",
+      desc: "UMKM ini menyediakan olahan ikan bandeng tanpa tulang yang praktis dan higienis. Dengan proses pengolahan khusus, ikan bandeng menjadi lebih mudah dikonsumsi tanpa khawatir tulang, tetap mempertahankan cita rasa khas bandeng yang gurih.",
+      wa: "6282396365581", // Nomor WhatsApp untuk UMKM 5 
+      harga: "Rp 25.000 - Rp 40.000" // Harga untuk UMKM 5
+    },
+    {
+      title: "Usaha Kue Kering dan Kue Basah",
+      img: "imageumkm/umkm6.jpg",
+      desc: "UMKM ini memproduksi berbagai jenis kue kering dan kue basah yang cocok untuk berbagai acara atau sebagai camilan sehari-hari. Semua produk dibuat dengan bahan berkualitas dan diolah dengan resep tradisional yang menjaga cita rasa autentik dan kelezatan setiap kue yang dihasilkan.",
+      wa: "6285657025824", // Nomor WhatsApp untuk UMKM 6
+      harga: "Rp 5.000 - Rp 100.000" // Harga untuk UMKM 6
+    },
+    {
+      title: "Budidaya Ikan Nila",
+      img: "imageumkm/umkm7.jpg",
+      desc: "UMKM ini fokus pada budidaya ikan nila yang dikelola secara alami dan ramah lingkungan. Dengan perawatan yang optimal, dihasilkan ikan nila segar berkualitas tinggi. Proses budidaya dilakukan dengan menjaga kebersihan dan kesehatan kolam sehingga ikan tumbuh sehat dan layak jual.",
+      wa: "6281342282779", // Nomor WhatsApp untuk UMKM 7
+      harga: "Rp 27.000 / kg" // Harga untuk UMKM 7
+    },
+  ];
+
+  function openUmkmModal(idx) {
+    const modal = document.getElementById('umkmModal');
+    const img = document.getElementById('umkmModalImg');
+    const title = document.getElementById('umkmModalTitle');
+    const harga = document.getElementById('umkmModalHarga');
+    const desc = document.getElementById('umkmModalDesc');
+    const waBtn = document.getElementById('umkmModalWa');
+
+    img.src = umkmData[idx].img;
+    title.textContent = umkmData[idx].title;
+    harga.textContent = `Harga: ${umkmData[idx].harga}`;
+    desc.textContent = umkmData[idx].desc;
+    waBtn.href = `https://wa.me/${umkmData[idx].wa}`;
+    waBtn.style.display = 'inline-block';
+    modal.classList.remove('hidden');
+}
+
+
+  function closeUmkmModal() {
+    document.getElementById('umkmModal').classList.add('hidden');
+  }
+</script>
+
+<div>
+  <div class="bg-[#265322] text-white">
+        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
+            <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
+                <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8"> <!-- Perbesar jarak antar logo -->
+                    <img alt="Logo 1" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoparepare.png"/>
+                    <img alt="Logo 2" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png" />
+                    <img alt="Logo 3" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoposko.png" />
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg text-[#b6e070] font-bold">Kelurahan Watang Bacukiki</h1>
+                    <p class="text-xs text-gray-300">Kel. Watang Bacukiki, Kec. Bacukiki, Kota Parepare</p>
+                </div>
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar ikon -->
+                    <a class="text-white text-sm hover:text-blue-300 transition-colors" href="https://www.tiktok.com/@kknt114.watang.bacukiki?_t=ZS-8xwLrzVWT2H&_r=1">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-pink-400 transition-colors" href="https://www.instagram.com/kknt114unhas.watangbacukiki?igsh=Z2JjODNwMzF5ZGNt">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/WT.+Bacukiki,+Kec.+Bacukiki,+Kota+Parepare,+Sulawesi+Selatan/@-4.0601738,119.6334579,13z/data=!3m1!4b1!4m6!3m5!1s0x2d95bc3f35c40fc9:0x2938745f4987971b!8m2!3d-4.0607876!4d119.6672998!16s%2Fg%2F1hm2f_2hh?entry=ttu&g_ep=EgoyMDI1MDcwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-gray-300 transition-colors" href="https://github.com/trismantegar48">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
+                <div class="space-y-2"> <!-- Tambah spasi internal -->
+                    <h2 class="text-base text-[#b6e070] font-bold">Website Profil </h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI merupakan situs web yang memuat informasi tentang sejarah, kondisi wilayah, struktur pemerintahan, potensi lokal, dan pelaku UMKM.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Developer</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat oleh Trisman Tegar Wiratama, Mahasiswa KKN Universitas Hasanuddin Gelombang 114 Kelurahan Watang Bacukiki pada Juli 2025.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Harapan &amp; Tujuan</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat untuk tujuan menyediakan media informasi digital bagi Kelurahan Watang Bacukiki, mendukung promosi potensi dan UMKM lokal, serta memperluas jangkauan informasi hingga ke masyarakat luar.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
+                <p class="text-xs text-gray-400">
+                    © 2025 Kelurahan Watang Bacukiki - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <style>
+        .nav-link.active {
+            position: relative;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
+    </style>
+    
+    <script>
+        // Script untuk mengatur navbar aktif
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dapatkan URL halaman saat ini
+            const currentLocation = location.pathname.split('/').pop();
+            
+            // Pilih semua link navigasi
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Loop melalui setiap link
+            navLinks.forEach(link => {
+                // Tambahkan event listener klik
+                link.addEventListener('click', function() {
+                    // Hapus kelas active dari semua link
+                    navLinks.forEach(l => {
+                        l.classList.remove('active');
+                    });
+                    
+                    // Tambahkan kelas active ke link yang diklik
+                    this.classList.add('active');
+                });
+
+                // Tandai link yang sesuai dengan halaman saat ini
+                if(link.getAttribute('href') === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const currentLocation = location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+            });
+
+            if(link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Efek transparan saat scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-90');
+                header.classList.add('backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-90');
+                header.classList.remove('backdrop-blur-sm');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

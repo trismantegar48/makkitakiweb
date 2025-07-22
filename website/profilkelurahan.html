@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kelurahan Watang Bacukiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"
+      rel="stylesheet"
+    />
+    <style>
+      /* Tambahkan transisi untuk efek halus */
+      .nav-link {
+        transition: color 0.3s ease;
+      }
+      /* Warna teks saat aktif */
+      .nav-link.active {
+        color: #b6e070;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-200 pt-14">
+    <header class="fixed top-0 left-0 right-0 bg-[#265322] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
+    <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+            <img 
+                alt="Logo Parepare" 
+                class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
+                src="images/logoparepare.png" 
+            />
+            <div>
+                <h1 class="text-[#b6e070] text-xl font-bold tracking-wider">Kelurahan Watang Bacukiki</h1>
+                <p class="text-white text-sm opacity-80">Kota Parepare</p>
+            </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav id="nav-menu" class="hidden md:block">
+            <ul class="flex flex-col md:flex-row md:space-x-4 text-white">
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="index.html">Home</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="profilkelurahan.html">Profil Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="infografis.html">Infografis</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="umkm.html">UMKM</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="potensikelurahan.html">Potensi Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+    });
+</script>
+
+    
+    <div class="font-roboto ml-10 mr-10">
+      <div class="container mx-auto px-4 py-8">
+       <div class="flex flex-col md:flex-row items-center md:items-start">
+        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-8">
+         <div class="relative">
+          <img alt="Foto Lurah" class="rounded-full border-4 border-green-500" height="200" src="imagesstruktur/bulurah.jpg" width="200"/>
+         </div>
+         <div class="mt-4 text-center md:text-left">
+          <h2 class="text-xl font-bold text-gray-800">
+            NUR MUHLISA, S.E., M.M.
+          </h2>
+          <p class="text-gray-500">
+           Lurah Watang Bacukiki
+          </p>
+         </div>
+        </div>
+        <div class="flex-grow">
+
+
+         <h1 class="text-2xl font-bold text-gray-800">
+          VISI
+         </h1>
+
+         <div class="mt-4 border-l-4 border-gray-300 pl-4">
+          <p class="text-3xl font-bold text-gray-500">
+              TERWUJUDNYA KELURAHAN WATANG BACUKIKI
+          </p>
+          <p class="text-2xl font-bold text-black-600">
+            yang
+          </p>
+          <p class="text-2xl font-bold text-green-600">
+            SMART
+        </p>
+          <p class="text-gray-700 mb-4">
+              <span class="text-green-600">Se</span>jahtera, (<span class="text-green-600">M</span>andiri, <span class="text-green-600">A</span>man, <span class="text-green-600">R</span>eligius, <span class="text-green-600">T</span>erdepan)</span> Berlandaskan Kearifan Lokal
+          </p>
+      </div>
+
+  
+
+         <h1 class="text-2xl font-bold text-gray-800 mt-4">
+          MISI
+         </h1>
+         <div class="mt-4 border-l-4 border-gray-300 pl-4">
+          <p class="text-black mb-2">
+           1. MENGEMBANGKAN USAHA EKONOMI KREATIF DAN PRODUKTIF MELALUI PEMBINAAN KELOMPOK USAHA MASYARAKAT
+          </p>
+          <p class="text-black mb-2">
+           2. MEWUJUDKAN KEMANDIRIAN MELALUI PEMBERDAYAAN MASYARAKAT
+          </p>
+          <p class="text-black mb-2">
+            3. MENCIPTAKAN KEAMANAN DAN KETERTIBAN MASYARAKAT (KAMTIBMAS)
+           </p>
+           <p class="text-black mb-2">
+            4. MENGAKTUALISASIKAN NILAI-NILAI KEAGAMAAN DALAM KEGIATAN PEMBANGUNAN DAN KEMASYARAKATAN
+           </p>
+            <p class="text-black mb-2">
+              5. MENINGKATKAN PELAYANAN PUBLIK YANG BERBASIS E-GOVERNMENT
+             </p>
+             <p class="text-black mb-2">
+              6. MENJAGA KEARIFAN LOKAL MELALUI PELESTARIAN BUDAYA
+             </p>
+             <h1 class="text-2xl font-bold text-gray-800 mt-4">
+         </div>
+
+         <h1 class="text-2xl font-bold text-gray-800 mt-4">
+          JANJI LAYANAN
+         </h1>
+         <div class="mt-4 border-l-4 border-gray-300 pl-4">
+         <p class="text-black mb-2">
+            1. Berupaya Memberikan Pelayanan yang Menyenangkan dan Terbaik untuk Mencapai Kepuasan Masyarakat
+         </p>
+         <p class="text-black mb-2">
+            2. Mengedepankan Kejujuran, Keadilan, dan Nilai-Nilai Kesopanan
+         </p>
+         <p class="text-black mb-2">
+            3. Menunjukkan Profesionalisme, Kemampuan Bekerja dan Bijak dalam Pelayanan Masyarakat
+         </p>
+         <p class="text-black mb-2">
+            4. Bekerja Secara Cepat, Tepat dan Cermat
+         </p>
+         <p class="text-black mb-2">
+            5. Mengikutsertakan Masyarakat dalam Perencanaan, Pengawasan Pembangunan di Kelurahan dan Memberdayakan Masyarakat dalam Setiap Kegiatan Pemerintahan dan Kemasyarakatan
+         </p>
+        </div>
+
+        <h1 class="text-2xl font-bold text-gray-800 mt-4">
+        MOTTO
+        </h1>
+        <div class="mt-4 border-l-4 border-gray-300 pl-4">
+        <p class="text-xl font-semibold text-green-700 italic">
+        "PERBUATAN HARI INI MENENTUKAN HARI ESOK"
+         </p>
+            </div>
+        </div>
+       </div>
+      </div>
+     </div>
+
+
+
+    <div class="container mx-auto px-8 p-4 bg-[#808080] text-white mb-10">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-full">
+          <div class="flex items-center mb-1">
+            <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+            <h1 class="text-4xl font-bold text-[#b6e070]">BAGAN KELURAHAN</h1>
+          </div>
+          <h2 class="text-2xl font-bold text-[#FFFFFF] mb-4">
+            Struktur Organisasi Kelurahan Watang Bacukiki
+          </h2>
+
+            <div class="p-5">
+              <img
+                alt="Struktur Organisasi Pemerintahan Kelurahan Watang Bacukiki"
+                class="w-full h-auto object-cover"
+                height="400"
+                src="imagesstruktur/strukturkelurahanwatangbacukiki.png"
+                width="1200"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#265322] text-white">
+        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
+            <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
+                <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8"> <!-- Perbesar jarak antar logo -->
+                    <img alt="Logo 1" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoparepare.png"/>
+                    <img alt="Logo 2" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png" />
+                    <img alt="Logo 3" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoposko.png" />
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg text-[#b6e070] font-bold">Kelurahan Watang Bacukiki</h1>
+                    <p class="text-xs text-gray-300">Kel. Watang Bacukiki, Kec. Bacukiki, Kota Parepare</p>
+                </div>
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar ikon -->
+                    <a class="text-white text-sm hover:text-blue-300 transition-colors" href="https://www.tiktok.com/@kknt114.watang.bacukiki?_t=ZS-8xwLrzVWT2H&_r=1">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-pink-400 transition-colors" href="https://www.instagram.com/kknt114unhas.watangbacukiki?igsh=Z2JjODNwMzF5ZGNt">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/WT.+Bacukiki,+Kec.+Bacukiki,+Kota+Parepare,+Sulawesi+Selatan/@-4.0601738,119.6334579,13z/data=!3m1!4b1!4m6!3m5!1s0x2d95bc3f35c40fc9:0x2938745f4987971b!8m2!3d-4.0607876!4d119.6672998!16s%2Fg%2F1hm2f_2hh?entry=ttu&g_ep=EgoyMDI1MDcwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-gray-300 transition-colors" href="https://github.com/trismantegar48">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
+                <div class="space-y-2"> <!-- Tambah spasi internal -->
+                    <h2 class="text-base text-[#b6e070] font-bold">Website Profil </h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI merupakan situs web yang memuat informasi tentang sejarah, kondisi wilayah, struktur pemerintahan, potensi lokal, dan pelaku UMKM.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Developer</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat oleh Trisman Tegar Wiratama, Mahasiswa KKN Universitas Hasanuddin Gelombang 114 Kelurahan Watang Bacukiki pada Juli 2025.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Harapan &amp; Tujuan</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat untuk tujuan menyediakan media informasi digital bagi Kelurahan Watang Bacukiki, mendukung promosi potensi dan UMKM lokal, serta memperluas jangkauan informasi hingga ke masyarakat luar.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
+                <p class="text-xs text-gray-400">
+                    © 2025 Kelurahan Watang Bacukiki - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+
+<style>
+  .nav-link.active {
+      position: relative;
+  }
+  .nav-link.active::after {
+      content: '';
+      position: absolute;
+      inset: -5px;
+      z-index: -1;
+      border-radius: 0.5rem;
+  }
+</style>
+
+<script>
+     document.addEventListener('DOMContentLoaded', function() {
+        const currentLocation = location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+            });
+
+            if(link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Efek transparan saat scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-90');
+                header.classList.add('backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-90');
+                header.classList.remove('backdrop-blur-sm');
+            }
+        });
+    });
+</script>
+
+  </body>
+</html>

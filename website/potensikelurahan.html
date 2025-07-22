@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kelurahan Watang Bacukiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+  .nav-link {
+    transition: color 0.3s ease;
+  }
+  .nav-link.active {
+    color: #b6e070;
+    font-weight: bold;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentLocation = location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navLinks.forEach((l) => l.classList.remove("active"));
+        this.classList.add("active");
+      });
+      if (link.getAttribute("href") === currentLocation) {
+        link.classList.add("active");
+      }
+    });
+
+    // Efek transparan saat scroll
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("bg-opacity-90");
+        header.classList.add("backdrop-blur-sm");
+      } else {
+        header.classList.remove("bg-opacity-90");
+        header.classList.remove("backdrop-blur-sm");
+      }
+    });
+  });
+</script>
+</head>
+<body class="bg-gray-200 pt-14">
+<header class="fixed top-0 left-0 right-0 bg-[#265322] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
+    <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+            <img 
+                alt="Logo Parepare" 
+                class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
+                src="images/logoparepare.png" 
+            />
+            <div>
+                <h1 class="text-[#b6e070] text-xl font-bold tracking-wider">Kelurahan Watang Bacukiki</h1>
+                <p class="text-white text-sm opacity-80">Kota Parepare</p>
+            </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav id="nav-menu" class="hidden md:block">
+            <ul class="flex flex-col md:flex-row md:space-x-4 text-white">
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="index.html">Home</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="profilkelurahan.html">Profil Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="infografis.html">Infografis</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="umkm.html">UMKM</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="potensikelurahan.html">Potensi Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+    });
+</script>
+
+
+    <section class="relative">
+        <img alt="Nature Cottage" class="w-full h-96 object-cover" height="600" src="images/batubacukiki.jpg" width="1920"/>
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white p-6">
+            <h1 class="text-4xl md:text-5xl font-bold transition-transform transform hover:scale-105 text-[#b6e070]">
+                Potensi Kelurahan
+            </h1>
+            <p class="mt-4 text-lg md:text-xl transition-opacity duration-300 hover:opacity-80">
+                Mengenal Lebih Jauh Potensi Kelurahan Watang Bacukiki
+            </p>
+        
+        </div>
+    </section>
+        </div>
+       </section>
+       <!-- About Section -->
+
+       <section class="py-16 bg-gray-200">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex items-center justify-center mb-8">  
+                    <div class="flex items-center mb-1">
+                        <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                        <h1 class="text-3xl font-bold text-black text-shadow">
+                            Komoditas Unggulan Berdasarkan Luas Tanam	
+                        </h1>
+                    </div>
+
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="relative">
+                        <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Padi" class="w-full h-full object-cover rounded-lg" height="400" src="images/home.jpg" width="600"/></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-20 rounded-lg p-6 flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold text-white">
+                                    Padi
+                                </h2>
+                                <p class="text-white mt-2">
+                                    Tersebar Di Seluruh Penjuru Kelurahan Watang Bacukiki
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Jagung" class="w-full h-full object-cover rounded-lg" height="400" src="images/jagung.jpg" width="600"/></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-20 rounded-lg p-6 flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold text-white">
+                                    Jagung
+                                </h2>
+                                <p class="text-white mt-2">
+                                    Tersebar Di Seluruh Penjuru Kelurahan Watang Bacukiki
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+       </section>
+
+
+
+       <section class="py-16 bg-[#265322] text-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <div class="flex items-center justify-center mb-8">  
+                <div class="flex items-center mb-1">
+                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                    <h1 class="text-3xl font-bold text-[#b6e070] text-shadow">
+                        Komoditas Unggulan Berdasarkan Nilai Ekonomi	
+                    </h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Kopi" class="w-full h-full object-cover" height="400" src="images/kopi.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-20 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Kopi
+                            </h2>
+                            <p class="text-white mt-2">
+                                Didedikasikan untuk membudidayakan tanaman kopi secara luas guna menghasilkan biji kopi bernilai ekonomis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Cengkeh" class="w-full h-full object-cover" height="400" src="images/cengkeh.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-20 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Cengkeh
+                            </h2>
+                            <p class="text-white mt-2">
+                                Tanaman rempah yang kuncup bunganya yang aromatik dikeringkan untuk dijadikan bumbu masak, minyak atsiri, dan bahan baku industri rokok kretek.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Aren" class="w-full h-full object-cover rounded-lg" height="400" src="images/aren.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-20 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Pohon Aren
+                            </h2>
+                            <p class="text-white mt-2">
+                                Jenis palem yang air sadapannya (nira) dapat difermentasi untuk diolah menjadi minuman keras tradisional seperti tuak atau sopi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Kapas" class="w-full h-full object-cover" height="400" src="images/kapas.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-20 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Pohon Kapas
+                            </h2>
+                            <p class="text-white mt-2">
+                                Tanaman yang menghasilkan serat alami pada bijinya, yang kemudian dipintal menjadi benang dan ditenun menjadi kain katun untuk industri tekstil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-6 bg-gray-200">
+  <div class="container mx-auto px-6 md:px-12 lg:px-24">
+    <div class="flex items-center justify-center mb-8">
+      <div class="flex items-center mb-1">
+        <div class="w-1 bg-green-800 h-12 mr-4"></div>
+        <h1 class="text-3xl font-bold text-black text-shadow">
+          Potensi Alam
+        </h1>
+      </div>
+      <style>
+        .text-shadow {
+          text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+      </style>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card Wisata Alam Ladoma -->
+      <div class="bg-white rounded-xl shadow p-6 flex flex-col h-full">
+        <img
+          src="images/ladoma.jpg"
+          alt="Wisata Alam Ladoma"
+          class="w-full h-56 md:h-64 object-cover rounded-lg mb-4"
+        />
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 border-l-4 border-blue-400 pl-4 text-black">Wisata Alam Ladoma</h2>
+        <p class="text-gray-700 mb-4 text-justify">
+          Wisata Alam Ladoma adalah destinasi rekreasi keluarga yang populer di Kelurahan Watang Bacukiki, Parepare, yang menawarkan suasana alam yang sejuk dan asri. Tempat ini memadukan konsep pemandian alam dan kolam renang dengan berbagai fasilitas pendukung seperti wahana outbound flying fox, gazebo untuk bersantai di tepi danau, serta area berkemah. Dengan daya tarik utamanya berupa kesegaran air dan pemandangan hijau, Ladoma menjadi pilihan favorit bagi warga lokal maupun wisatawan untuk menghabiskan akhir pekan dan hari libur bersama keluarga.
+        </p>
+      </div>
+      <!-- Card Bendungan Lappa Anging -->
+      <div class="bg-white rounded-xl shadow p-6 flex flex-col h-full">
+        <img
+          src="images/bendungan.jpg"
+          alt="Bendungan Lappa Anging"
+          class="w-full h-56 md:h-64 object-cover rounded-lg mb-4"
+        />
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 border-l-4 border-blue-400 pl-4 text-black">Bendungan Lappa Anging</h2>
+        <p class="text-gray-700 mb-4 text-justify">
+          Bendungan Lappa Anging merupakan sebuah bendungan irigasi di Kecamatan Bacukiki yang kini juga berfungsi sebagai tujuan wisata alternatif berkat keindahan pemandangannya. Daya tarik utamanya adalah panorama hamparan air yang luas dengan latar belakang perbukitan hijau yang menenangkan, menjadikannya lokasi ideal untuk bersantai di sore hari. Meskipun fasilitasnya terbatas, suasana yang tenang dan pemandangan alam yang indah membuat bendungan ini kerap dikunjungi warga untuk melepas penat, memancing, atau sekadar menikmati udara segar, namun pengunjung tetap diimbau untuk berhati-hati mengingat fungsi vital dan potensi arus air di area tersebut.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="py-6 bg-gray-200">
+  <div class="container mx-auto px-6 md:px-12 lg:px-24">
+    <div class="flex items-center justify-center mb-8">
+      <div class="flex items-center mb-1">
+        <div class="w-1 bg-green-800 h-12 mr-4"></div>
+        <h1 class="text-3xl font-bold text-black text-shadow">
+          Peninggalan Sejarah
+        </h1>
+      </div>
+    </div>
+    <style>
+      .text-shadow {
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </div>
+</section>
+
+<section class="bg-gray-200">
+  <div class="container mx-auto p-4">
+    <div class="flex flex-col md:flex-row gap-8 bg-white rounded-xl shadow p-8">
+      <!-- Kolom Gambar -->
+      <div class="md:w-1/2 flex">
+        <img
+          src="peninggalansejarah/batumakkikie.jpg"
+          alt="A beautiful waterfall in a lush green forest"
+          class="w-full h-full object-cover rounded-lg"
+          style="min-height:300px; max-height:600px;"
+        />
+      </div>
+      <!-- Kolom Deskripsi -->
+      <div class="md:w-1/2 flex flex-col justify-center">
+        <h2 class="text-4xl font-bold mb-4 border-l-4 border-blue-400 pl-4">Batu Makkiki'e</h2>
+        <p class="text-gray-700 mb-4 text-justify">
+          Batu Makkikie, yang namanya secara harfiah berarti "menangis" dalam bahasa Bugis, adalah sebuah situs bersejarah yang kisahnya terjalin erat dengan legenda Kerajaan Bacukiki di masa lampau. Cerita rakyat yang diwariskan turun-temurun mengisahkan tentang seorang putri raja yang cantik jelita, yang hatinya hancur karena dipaksa menerima perjodohan dengan seorang pangeran yang tidak ia cintai. Dalam keputusasaannya, sang putri melarikan diri dari istana hingga tiba di sebuah lokasi terpencil di mana ia meratapi nasibnya dengan tangisan yang pilu. 
+        </p>
+        <p class="text-gray-700 mb-4 text-justify">
+          Legenda mengatakan bahwa di puncak kesedihannya, sang putri menghilang secara gaib, dan sebagai penanda abadi dari duka citanya, muncullah sebuah batu besar di tempat itu. Kini, Batu Makkikie tidak hanya menjadi objek wisata, tetapi juga sebuah cagar budaya yang dihormati, berfungsi sebagai pengingat akan kekuatan cerita rakyat dalam membentuk identitas dan memori kolektif masyarakat Parepare.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-200">
+  <div class="container mx-auto p-4">
+    <div class="flex flex-col md:flex-row gap-8 bg-white rounded-xl shadow p-8">
+      <!-- Kolom Gambar -->
+      <div class="md:w-1/2 flex">
+        <img
+          src="peninggalansejarah/monumen.jpg"
+          alt="A beautiful waterfall in a lush green forest"
+          class="w-full h-full object-cover rounded-lg"
+          style="min-height:300px; max-height:600px;"
+        />
+      </div>
+      <!-- Kolom Deskripsi -->
+      <div class="md:w-1/2 flex flex-col justify-center">
+        <h2 class="text-4xl font-bold mb-4 border-l-4 border-blue-400 pl-4">Monumen Korban 4.000 Jiwa</h2>
+        <p class="text-gray-700 mb-4 text-justify">
+          Monumen Korban 40.000 Jiwa merupakan tugu peringatan yang didirikan untuk mengenang salah satu episode paling kelam dalam sejarah perjuangan Indonesia, yaitu pembantaian yang dilakukan oleh pasukan khusus Belanda Depot Speciale Troepen (DST) di bawah komando Kapten Raymond Westerling. Peristiwa tragis ini berlangsung antara Desember 1946 hingga Februari 1947, dengan tujuan mematahkan perlawanan sengit rakyat Sulawesi Selatan terhadap upaya Belanda untuk kembali berkuasa. Westerling menerapkan metode keji yang dikenal sebagai standrecht (hukum rimba), di mana ia melakukan eksekusi massal di tempat terhadap siapa saja yang dicurigai sebagai pejuang atau simpatisan kemerdekaan tanpa proses pengadilan.
+        </p>
+        <p class="text-gray-700 mb-4 text-justify">
+          Angka "40.000 jiwa" yang tersemat pada monumen ini adalah sebuah angka simbolis yang melambangkan skala besar korban di seluruh Sulawesi Selatan. Monumen yang berdiri di Bacukiki ini secara khusus menjadi tanda penghormatan bagi para pahlawan dan rakyat sipil yang gugur di wilayah Parepare, sekaligus berfungsi sebagai pengingat yang kuat bagi generasi penerus tentang pengorbanan luar biasa yang dibutuhkan untuk meraih kemerdekaan.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+        <!-- Modal -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+            <span class="absolute bottom-4 left-4 text-white cursor-pointer" onclick="closeModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 12 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H3m0 0l6 6m-6-6l6-6" />
+                </svg>
+            </span>
+            <img id="modalImage" class="max-w-full max-h-full" src="" alt="Zoomed Image"/>
+        </div>
+    </section>
+    
+<div>
+  <div class="bg-[#265322] text-white">
+        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
+            <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
+                <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8"> <!-- Perbesar jarak antar logo -->
+                    <img alt="Logo 1" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoparepare.png"/>
+                    <img alt="Logo 2" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png" />
+                    <img alt="Logo 3" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoposko.png" />
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg text-[#b6e070] font-bold">Kelurahan Watang Bacukiki</h1>
+                    <p class="text-xs text-gray-300">Kel. Watang Bacukiki, Kec. Bacukiki, Kota Parepare</p>
+                </div>
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar ikon -->
+                    <a class="text-white text-sm hover:text-blue-300 transition-colors" href="https://www.tiktok.com/@kknt114.watang.bacukiki?_t=ZS-8xwLrzVWT2H&_r=1">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-pink-400 transition-colors" href="https://www.instagram.com/kknt114unhas.watangbacukiki?igsh=Z2JjODNwMzF5ZGNt">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/WT.+Bacukiki,+Kec.+Bacukiki,+Kota+Parepare,+Sulawesi+Selatan/@-4.0601738,119.6334579,13z/data=!3m1!4b1!4m6!3m5!1s0x2d95bc3f35c40fc9:0x2938745f4987971b!8m2!3d-4.0607876!4d119.6672998!16s%2Fg%2F1hm2f_2hh?entry=ttu&g_ep=EgoyMDI1MDcwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-gray-300 transition-colors" href="https://github.com/trismantegar48">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
+                <div class="space-y-2"> <!-- Tambah spasi internal -->
+                    <h2 class="text-base text-[#b6e070] font-bold">Website Profil </h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI merupakan situs web yang memuat informasi tentang sejarah, kondisi wilayah, struktur pemerintahan, potensi lokal, dan pelaku UMKM.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Developer</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat oleh Trisman Tegar Wiratama, Mahasiswa KKN Universitas Hasanuddin Gelombang 114 Kelurahan Watang Bacukiki pada Juli 2025.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Harapan &amp; Tujuan</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat untuk tujuan menyediakan media informasi digital bagi Kelurahan Watang Bacukiki, mendukung promosi potensi dan UMKM lokal, serta memperluas jangkauan informasi hingga ke masyarakat luar.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
+                <p class="text-xs text-gray-400">
+                    © 2025 Kelurahan Watang Bacukiki - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <style>
+        .nav-link.active {
+            position: relative;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
+    </style>
+    
+    <script>
+        // Script untuk mengatur navbar aktif
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dapatkan URL halaman saat ini
+            const currentLocation = location.pathname.split('/').pop();
+            
+            // Pilih semua link navigasi
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Loop melalui setiap link
+            navLinks.forEach(link => {
+                // Tambahkan event listener klik
+                link.addEventListener('click', function() {
+                    // Hapus kelas active dari semua link
+                    navLinks.forEach(l => {
+                        l.classList.remove('active');
+                    });
+                    
+                    // Tambahkan kelas active ke link yang diklik
+                    this.classList.add('active');
+                });
+
+                // Tandai link yang sesuai dengan halaman saat ini
+                if(link.getAttribute('href') === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const currentLocation = location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+            });
+
+            if(link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Efek transparan saat scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-90');
+                header.classList.add('backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-90');
+                header.classList.remove('backdrop-blur-sm');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kelurahan Watang Bacukiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahkan transisi untuk efek halus */
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        /* Warna teks saat aktif */
+        .nav-link.active {
+            color: #b6e070;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 pt-14">
+    <header class="fixed top-0 left-0 right-0 bg-[#265322] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
+    <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+            <img 
+                alt="Logo Parepare" 
+                class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
+                src="images/logoparepare.png" 
+            />
+            <div>
+                <h1 class="text-[#b6e070] text-xl font-bold tracking-wider">Kelurahan Watang Bacukiki</h1>
+                <p class="text-white text-sm opacity-80">Kota Parepare</p>
+            </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav id="nav-menu" class="hidden md:block">
+            <ul class="flex flex-col md:flex-row md:space-x-4 text-white">
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="index.html">Home</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="profilkelurahan.html">Profil Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="infografis.html">Infografis</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="umkm.html">UMKM</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="potensikelurahan.html">Potensi Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+    });
+</script>
+
+     
+       <div class="max-w-6xl mx-auto p-6">
+       
+
+        <div class="flex items-center mb-1">
+            <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+            <h1 class="text-4xl font-bold text-gray-800" style="font-family: 'Poppins', sans-serif;">Tentang Website</h1>
+        </div>
+        <h2 class="text-2xl font-semibold text-gray-500 mb-4">
+         Kelurahan Watang Bacukiki
+        </h2>
+        <p class="mb-4 text-justify">
+         Website MAKKITAKI merupakan situs web yang memuat informasi tentang sejarah, kondisi wilayah, struktur pemerintahan, potensi lokal, dan pelaku UMKM.
+        </p>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+         Tentang Mahasiswa KKN
+        </h3>
+        <p class="mb-4 text-justify">
+         Mahasiswa KKN-T Gelombang 114 Universitas Hasanuddin yang ditempatkan di Kelurahan Watang Bacukiki merupakan penanggung jawab dalam pengembangan dan pembuatan website profil kelurahan ini. Posko KKN ini diketuai oleh Trisman Tegar Wiratama dan beranggotakan 8 orang mahasiswa yang berasal dari berbagai jurusan di Universitas Hasanuddin. Posko ini hadir dengan harapan dapat memberikan dampak positif bagi Kelurahan Watang Bacukiki dan masyarakat sekitarnya melalui pelaksanaan program kerja yang disusun berdasarkan kondisi dan kebutuhan lokal.
+        </p>
+        <p class="mb-4 text-justify">
+         Adapun tematik program kerja yang diusung oleh posko ini meliputi Pengembangan UMKM dan Ekonomi Kreatif, Pengelolaan Sampah dan TPS3R, serta Pencegahan Stunting. Salah satu program unggulan yang dijalankan adalah Pembuatan Website MAKKITAKI (Mari Kita Kenali Kelurahan Watang Bacukiki). Seiring berkembangnya inovasi di bidang teknologi informasi, kebutuhan akan media digital sebagai sarana penyampaian informasi menjadi sangat penting. Website ini dibuat sebagai wadah informasi yang dapat diakses dengan mudah oleh seluruh masyarakat, baik dari dalam maupun luar kelurahan. Diharapkan keberadaan website ini dapat memperkenalkan potensi, kegiatan, dan informasi penting lainnya tentang Kelurahan Watang Bacukiki, serta menjadi langkah awal menuju kelurahan yang lebih dikenal, terhubung, dan berkembang secara digital.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center items-center mb-4 gap-4">
+         <div class="text-center">
+        <img alt="Foto pembuat website" class="rounded-full shadow-lg w-64 h-64 mx-auto" src="imageabout/trismanji.jpg" />
+        <p class="mt-2 text-sm text-gray-600">
+        Trisman Tegar Wiratama Selaku Pembuat Website MAKKITAKI
+        </p>
+        </div>
+         <div class="text-center justify-center">
+          <img alt="Foto kami seposko" class="rounded-lg w-[600px] h-auto mx-auto mt-4" src="imageabout/poskokami.jpg"/>
+          <p class="mt-2 text-sm text-gray-600">
+           Mahasiswa KKN Gel. 114 Universitas Hasanuddin Posko Kelurahan Watang Bacukiki
+          </p>
+         </div>
+         <div class="text-center justify-center">
+          <img alt="Logo KKN kami" class="rounded-lg w-64 h-64" src="images/logoposko.png"/>
+          <p class="mt-2 text-sm text-gray-600">
+           Logo Posko KKN Unhas Kelurahan Watang Bacukiki
+          </p>
+         </div>
+        </div>
+       
+       </div>
+
+
+       <div class="bg-[#265322] text-white">
+        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
+            <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
+                <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8"> <!-- Perbesar jarak antar logo -->
+                    <img alt="Logo 1" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoparepare.png"/>
+                    <img alt="Logo 2" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png" />
+                    <img alt="Logo 3" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoposko.png" />
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg text-[#b6e070] font-bold">Kelurahan Watang Bacukiki</h1>
+                    <p class="text-xs text-gray-300">Kel. Watang Bacukiki, Kec. Bacukiki, Kota Parepare</p>
+                </div>
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar ikon -->
+                    <a class="text-white text-sm hover:text-blue-300 transition-colors" href="https://www.tiktok.com/@kknt114.watang.bacukiki?_t=ZS-8xwLrzVWT2H&_r=1">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-pink-400 transition-colors" href="https://www.instagram.com/kknt114unhas.watangbacukiki?igsh=Z2JjODNwMzF5ZGNt">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/WT.+Bacukiki,+Kec.+Bacukiki,+Kota+Parepare,+Sulawesi+Selatan/@-4.0601738,119.6334579,13z/data=!3m1!4b1!4m6!3m5!1s0x2d95bc3f35c40fc9:0x2938745f4987971b!8m2!3d-4.0607876!4d119.6672998!16s%2Fg%2F1hm2f_2hh?entry=ttu&g_ep=EgoyMDI1MDcwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-gray-300 transition-colors" href="https://github.com/trismantegar48">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
+                <div class="space-y-2"> <!-- Tambah spasi internal -->
+                    <h2 class="text-base text-[#b6e070] font-bold">Website Profil </h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI merupakan situs web yang memuat informasi tentang sejarah, kondisi wilayah, struktur pemerintahan, potensi lokal, dan pelaku UMKM.                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Developer</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat oleh Trisman Tegar Wiratama, Mahasiswa KKN Universitas Hasanuddin Gelombang 114 Kelurahan Watang Bacukiki pada Juli 2025.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Harapan &amp; Tujuan</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat untuk tujuan menyediakan media informasi digital bagi Kelurahan Watang Bacukiki, mendukung promosi potensi dan UMKM lokal, serta memperluas jangkauan informasi hingga ke masyarakat luar.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
+                <p class="text-xs text-gray-400">
+                    © 2025 Kelurahan Watang Bacukiki - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .nav-link.active {
+            position: relative;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
+    </style>
+    <script>
+        // Script untuk mengatur navbar aktif
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dapatkan URL halaman saat ini
+            const currentLocation = location.pathname.split('/').pop();
+            
+            // Pilih semua link navigasi
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Loop melalui setiap link
+            navLinks.forEach(link => {
+                // Tambahkan event listener klik
+                link.addEventListener('click', function() {
+                    // Hapus kelas active dari semua link
+                    navLinks.forEach(l => {
+                        l.classList.remove('active');
+                    });
+                    
+                    // Tambahkan kelas active ke link yang diklik
+                    this.classList.add('active');
+                });
+
+                // Tandai link yang sesuai dengan halaman saat ini
+                if(link.getAttribute('href') === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const currentLocation = location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+            });
+
+            if(link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Efek transparan saat scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-90');
+                header.classList.add('backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-90');
+                header.classList.remove('backdrop-blur-sm');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

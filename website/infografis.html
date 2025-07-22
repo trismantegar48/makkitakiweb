@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kelurahan Watang Bacukiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahkan transisi untuk efek halus */
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        /* Warna teks saat aktif */
+        .nav-link.active {
+            color: #b6e070;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 pt-14">
+<header class="fixed top-0 left-0 right-0 bg-[#265322] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
+    <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+            <img 
+                alt="Logo Parepare" 
+                class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
+                src="images/logoparepare.png" 
+            />
+            <div>
+                <h1 class="text-[#b6e070] text-xl font-bold tracking-wider">Kelurahan Watang Bacukiki</h1>
+                <p class="text-white text-sm opacity-80">Kota Parepare</p>
+            </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav id="nav-menu" class="hidden md:block">
+            <ul class="flex flex-col md:flex-row md:space-x-4 text-white">
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="index.html">Home</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="profilkelurahan.html">Profil Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="infografis.html">Infografis</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="umkm.html">UMKM</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="potensikelurahan.html">Potensi Kelurahan</a>
+                </li>
+                <li class="group relative">
+                    <a class="relative z-10 font-bold nav-link px-3 py-2 group-hover:text-white transition-all duration-300" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+    });
+</script>
+
+
+    <!-- Jumlah Penduduk dan Kepala Keluarga -->
+<div class="max-w-4xl mx-auto p-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="bg-white p-4 rounded-lg shadow flex flex-col h-full min-h-[220px]">
+      <div>
+        <div class="flex items-center mb-2">
+          <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+          <h1 class="text-3xl font-bold text-black" style="font-family: 'Poppins', sans-serif;">Jumlah Penduduk</h1>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/penduduk.png" />
+        <div>
+          <p class="text-gray-600">TOTAL PENDUDUK</p>
+          <p class="text-2xl font-bold text-gray-800">2.339 Jiwa</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow flex flex-col h-full min-h-[220px]">
+      <div>
+        <div class="flex items-center mb-2">
+          <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+          <h1 class="text-3xl font-bold text-black" style="font-family: 'Poppins', sans-serif;">Kepala Keluarga</h1>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/keluarga.png" />
+        <div>
+          <p class="text-gray-600">KEPALA KELUARGA</p>
+          <p class="text-2xl font-bold text-gray-800">709 KK</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Tingkat Pendidikan Masyarakat Berdasarkan Lulusan Pendidikan Umum -->
+<div class="max-w-4xl mx-auto p-4">
+  <div class="bg-white p-4 rounded-lg shadow flex flex-col justify-between h-full min-h-[220px]">
+    <div class="flex items-center mb-2">
+      <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+      <h1 class="text-3xl font-bold text-black" style="font-family: 'Poppins', sans-serif;">Tingkat Pendidikan Masyarakat Berdasarkan Lulusan Pendidikan Umum</h1>
+    </div>
+    <div class="flex justify-center mt-6">
+      <div class="chart-container" style="width:650px;">
+        <canvas id="pendidikanChart" height="650"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const data = [84, 982, 348, 361, 30, 78, 2]; // Data jumlah lulusan pendidikan
+  const total = data.reduce((a, b) => a + b, 0);
+
+  const ctx = document.getElementById('pendidikanChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: [
+        'Taman Kanak-Kanak (84 orang)',
+        'Sekolah Dasar/Sederajat (982 orang)',
+        'SMP/Sederajat (348 orang)',
+        'SMA/Sederajat (361 orang)',
+        'Akademi/D1-D3 (30 orang)',
+        'Sarjana (78 orang)',
+        'Pascasarjana (2 orang)'
+      ],
+      datasets: [{
+        data: data,
+        backgroundColor: [
+          '#4f81bd',  // Taman Kanak-Kanak
+          '#f79646',  // Sekolah Dasar/Sederajat
+          '#9bbb59',  // SMP/Sederajat
+          '#c0504d',  // SMA/Sederajat
+          '#8064a2',  // D1-D3
+          '#604a3c',  // Sarjana
+          '#000000'   // Pascasarjana
+        ]
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          position: 'right'
+        },
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              const value = context.parsed;
+              const percentage = ((value / total) * 100).toFixed(2) + '%';
+              return context.label + ': ' + value + ' (' + percentage + ')';
+            }
+          }
+        }
+      }
+    }
+  });
+</script>
+         <div class="max-w-4xl mx-auto p-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <!-- Card Lulusan Pendidikan Khusus -->
+    <div class="bg-white p-4 rounded-lg shadow flex flex-col">
+      <div class="flex items-center mb-2">
+        <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+        <h1 class="font-bold text-black" style="font-family: 'Poppins', sans-serif; font-size:18px;">Lulusan Pendidikan Khusus</h1>
+      </div>
+      <div class="flex items-center mb-2">
+        <img alt="Pesantren" class="w-12 h-12 mr-4" src="imageinfografis/pesantren.png"/>
+        <div>
+          <p class="text-gray-600">PONDOK PESANTREN</p>
+          <p class="text-2xl font-bold">- ORANG</p>
+        </div>
+      </div>
+      <div class="flex items-center mb-2">
+        <img alt="Keagamaan" class="w-12 h-12 mr-4" src="imageinfografis/keagamaan.png"/>
+        <div>
+          <p class="text-gray-600">PENDIDIKAN KEAGAMAAN</p>
+          <p class="text-2xl font-bold">- ORANG</p>
+        </div>
+      </div>
+      <div class="flex items-center mb-2">
+        <img alt="Sekolah Luar Biasa" class="w-12 h-12 mr-4" src="imageinfografis/slb.png"/>
+        <div>
+          <p class="text-gray-600">SEKOLAH LUAR BIASA</p>
+          <p class="text-2xl font-bold">- ORANG</p>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <img alt="Kursus Keterampilan" class="w-12 h-12 mr-4" src="imageinfografis/kursusketerampilan.png"/>
+        <div>
+          <p class="text-gray-600">KURSUS KETERAMPILAN</p>
+          <p class="text-2xl font-bold">- ORANG </p>
+        </div>
+      </div>
+    </div>
+    <!-- Jumlah Putus Sekolah dan Penduduk Miskin -->
+    <div class="bg-white p-4 rounded-lg shadow flex flex-col">
+      <div class="flex items-center mb-2">
+        <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+        <h1 class="font-bold text-black" style="font-family: 'Poppins', sans-serif; font-size:18px;">Jumlah Putus Sekolah dan Penduduk Miskin</h1>
+      </div>
+      <div class="flex items-center mb-2">
+        <img alt="Putus Sekolah" class="w-12 h-12 mr-4" src="imageinfografis/putussekolah.png"/>
+        <div>
+          <p class="text-gray-600">PUTUS SEKOLAH</p>
+          <p class="text-2xl font-bold">5 ORANG</p>
+        </div>
+      </div>
+      <div class="flex items-center mb-2">
+        <img alt="Penduduk Miskin" class="w-12 h-12 mr-4" src="imageinfografis/miskin.png"/>
+        <div>
+          <p class="text-gray-600">PENDUDUK MISKIN</p>
+          <p class="text-2xl font-bold">1842 JIWA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="max-w-4xl mx-auto p-4">
+      <div class="bg-white p-4 rounded-lg shadow flex flex-col justify-between h-full min-h-[220px]">
+        <div class="flex items-center mb-2">
+          <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+            <h1 class="text-3xl font-bold text-black" style="font-family: 'Poppins', sans-serif;">
+            Sarana dan Prasarana
+      </h1>    
+    </div>
+
+    <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col justify-between h-full min-h-[140px] mb-4">
+      <h2 class="text-xl font-bold text-black mb-4">Prasarana Pemerintahan</h2>
+      <div class="flex items-center mb-2">
+        <img alt="Kantor Desa" class="w-12 h-12 mr-4" src="imageinfografis/kantorlurah.png"/>
+        <div>
+          <p class="text-gray-600">Kantor Kelurahan</p>
+          <p class="text-2xl font-bold text-gray-800">1 UNIT</p>
+        </div>
+      </div>
+   
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <!-- Prasarana Kesehatan -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col justify-between h-full min-h-[220px]">
+        <h2 class="text-xl font-bold text-black mb-4">Prasarana Kesehatan</h2>
+        <div class="flex items-center mb-2">
+          <img alt="Puskesmas" class="w-12 h-12 mr-4" src="imageinfografis/puskesmas.png"/>
+          <div>
+            <p class="text-gray-600">Puskesmas</p>
+            <p class="text-2xl font-bold text-gray-800">Ada/Tidak</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img alt="Posyandu" class="w-12 h-12 mr-4" src="imageinfografis/posyandu.png"/>
+          <div>
+            <p class="text-gray-600">UKBM (Posyandu)</p>
+            <p class="text-2xl font-bold text-gray-800">6 BUAH</p>
+          </div>
+        </div>
+      </div>
+      <!-- Prasarana Pendidikan -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col justify-between h-full min-h-[220px]">
+  <h2 class="text-xl font-bold text-black mb-4">Prasarana Pendidikan</h2>
+  <div class="flex items-center mb-2">
+    <img alt="PAUD" class="w-12 h-12 mr-4" src="imageinfografis/paud.png"/>
+    <div>
+      <p class="text-gray-600">PAUD</p>
+      <p class="text-2xl font-bold text-gray-800">1 BUAH</p>
+    </div>
+  </div>
+  <div class="flex items-center mb-2">
+    <img alt="TK" class="w-12 h-12 mr-4" src="imageinfografis/tk.png"/>
+    <div>
+      <p class="text-gray-600">TK</p>
+      <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+    </div>
+  </div>
+  <div class="flex items-center mb-2">
+    <img alt="SD" class="w-12 h-12 mr-4" src="imageinfografis/sd.png"/>
+    <div>
+      <p class="text-gray-600">SD</p>
+      <p class="text-2xl font-bold text-gray-800">2 BUAH</p>
+    </div>
+  </div>
+  <div class="flex items-center mb-2">
+    <img alt="SMP" class="w-12 h-12 mr-4" src="imageinfografis/smp.png"/>
+    <div>
+      <p class="text-gray-600">SMP</p>
+      <p class="text-2xl font-bold text-gray-800">1 BUAH</p>
+    </div>
+  </div>
+  <div class="flex items-center mb-2">
+    <img alt="SMA" class="w-12 h-12 mr-4" src="imageinfografis/sma.png"/>
+    <div>
+      <p class="text-gray-600">SMA</p>
+      <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+    </div>
+  </div>
+  <div class="flex items-center">
+    <img alt="PT" class="w-12 h-12 mr-4" src="imageinfografis/universitas.png"/>
+    <div>
+      <p class="text-gray-600">PT</p>
+      <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+    </div>
+  </div>
+</div>
+      <!-- Prasarana Ibadah -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col justify-between h-full min-h-[220px]">
+  <h2 class="text-xl font-bold text-black mb-4">Prasarana Ibadah</h2>
+  <div class="flex items-center mb-2">
+    <img alt="Masjid" class="w-12 h-12 mr-4" src="imageinfografis/masjid.png"/>
+    <div>
+      <p class="text-gray-600">Masjid</p>
+      <p class="text-2xl font-bold text-gray-800">6 BUAH</p>
+    </div>
+  </div>
+  <div class="flex items-center mb-2">
+    <img alt="Mushollah" class="w-12 h-12 mr-4" src="imageinfografis/mushollah.png"/>
+    <div>
+      <p class="text-gray-600">Mushollah</p>
+      <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+    </div>
+  </div>
+  <!-- Tambahan Gereja -->
+  <div class="flex items-center mb-2">
+    <img alt="Gereja" class="w-12 h-12 mr-4" src="imageinfografis/gereja.png"/>
+    <div>
+      <p class="text-gray-600">Gereja</p>
+      <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+    </div>
+  </div>
+  <!-- Tambahan Pura -->
+  <div class="flex items-center mb-2">
+    <img alt="Pura" class="w-12 h-12 mr-4" src="imageinfografis/pura.png"/>
+    <div>
+      <p class="text-gray-600">Pura</p>
+      <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+    </div>
+  </div>
+  <!-- Tambahan Vihara -->
+  <div class="flex items-center mb-2">
+    <img alt="Vihara" class="w-12 h-12 mr-4" src="imageinfografis/vihara.png"/>
+    <div>
+      <p class="text-gray-600">Vihara</p>
+      <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+    </div>
+  </div>
+  <!-- Tambahan Klenteng -->
+  <div class="flex items-center">
+    <img alt="Klenteng" class="w-12 h-12 mr-4" src="imageinfografis/klenteng.png"/>
+    <div>
+      <p class="text-gray-600">Klenteng</p>
+      <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Prasarana Umum -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow flex flex-col justify-between h-full min-h-[220px]">
+        <h2 class="text-xl font-bold text-black mb-4">Prasarana Umum</h2>
+        <div class="flex items-center mb-2">
+          <img alt="Sepakbola" class="w-12 h-12 mr-4" src="imageinfografis/bola.png"/>
+          <div>
+            <p class="text-gray-600">Sepakbola</p>
+            <p class="text-2xl font-bold text-gray-800">1 BUAH</p>
+          </div>
+        </div>
+        <div class="flex items-center mb-2">
+          <img alt="Bulutangkis" class="w-12 h-12 mr-4" src="imageinfografis/bulutangkis.png"/>
+          <div>
+            <p class="text-gray-600">Bulutangkis</p>
+            <p class="text-2xl font-bold text-gray-800">1 BUAH</p>
+          </div>
+        </div>
+        <div class="flex items-center mb-2">
+          <img alt="Voli" class="w-12 h-12 mr-4" src="imageinfografis/voli.png"/>
+          <div>
+            <p class="text-gray-600">Voli</p>
+            <p class="text-2xl font-bold text-gray-800">1 BUAH</p>
+          </div>
+        </div>
+        <div class="flex items-center mb-2">
+          <img alt="Kesenian/Budaya" class="w-12 h-12 mr-4" src="imageinfografis/seni.png"/>
+          <div>
+            <p class="text-gray-600">Kesenian/Budaya</p>
+            <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+          </div>
+        </div>
+        <div class="flex items-center mb-2">
+          <img alt="Balai Pertemuan" class="w-12 h-12 mr-4" src="imageinfografis/balaipertemuan.png"/>
+          <div>
+            <p class="text-gray-600">Balai Pertemuan</p>
+            <p class="text-2xl font-bold text-gray-800">- BUAH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script>
+      // Script untuk mengatur navbar aktif
+      document.addEventListener("DOMContentLoaded", function () {
+        // Dapatkan URL halaman saat ini
+        const currentLocation = location.pathname.split("/").pop();
+
+        // Pilih semua link navigasi
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        // Loop melalui setiap link
+        navLinks.forEach((link) => {
+          // Tambahkan event listener klik
+          link.addEventListener("click", function () {
+            // Hapus kelas active dari semua link
+            navLinks.forEach((l) => {
+              l.classList.remove("active");
+            });
+
+            // Tambahkan kelas active ke link yang diklik
+            this.classList.add("active");
+          });
+
+          // Tandai link yang sesuai dengan halaman saat ini
+          if (link.getAttribute("href") === currentLocation) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentLocation = location.pathname.split("/").pop();
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            navLinks.forEach((l) => {
+              l.classList.remove("active");
+            });
+
+            this.classList.add("active");
+          });
+
+          if (link.getAttribute("href") === currentLocation) {
+            link.classList.add("active");
+          }
+        });
+
+        // Efek transparan saat scroll
+        window.addEventListener("scroll", function () {
+          const header = document.querySelector("header");
+          if (window.scrollY > 50) {
+            header.classList.add("bg-opacity-90");
+            header.classList.add("backdrop-blur-sm");
+          } else {
+            header.classList.remove("bg-opacity-90");
+            header.classList.remove("backdrop-blur-sm");
+          }
+        });
+      });
+    </script>
+  </body>
+
+</div>
+</div>
+
+ <div class="rounded-lg mt-8">
+    <div class="items-center">
+
+<div>
+  <div class="bg-[#265322] text-white">
+        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
+            <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
+                <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8"> <!-- Perbesar jarak antar logo -->
+                    <img alt="Logo 1" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoparepare.png"/>
+                    <img alt="Logo 2" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png" />
+                    <img alt="Logo 3" class="h-12 opacity-100 hover:opacity-100 transition-opacity" height="50" src="images/logoposko.png" />
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg text-[#b6e070] font-bold">Kelurahan Watang Bacukiki</h1>
+                    <p class="text-xs text-gray-300">Kel. Watang Bacukiki, Kec. Bacukiki, Kota Parepare</p>
+                </div>
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar ikon -->
+                    <a class="text-white text-sm hover:text-blue-300 transition-colors" href="https://www.tiktok.com/@kknt114.watang.bacukiki?_t=ZS-8xwLrzVWT2H&_r=1">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-pink-400 transition-colors" href="https://www.instagram.com/kknt114unhas.watangbacukiki?igsh=Z2JjODNwMzF5ZGNt">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/WT.+Bacukiki,+Kec.+Bacukiki,+Kota+Parepare,+Sulawesi+Selatan/@-4.0601738,119.6334579,13z/data=!3m1!4b1!4m6!3m5!1s0x2d95bc3f35c40fc9:0x2938745f4987971b!8m2!3d-4.0607876!4d119.6672998!16s%2Fg%2F1hm2f_2hh?entry=ttu&g_ep=EgoyMDI1MDcwOC4wIKXMDSoASAFQAw%3D%3D">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-gray-300 transition-colors" href="https://github.com/trismantegar48">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
+                <div class="space-y-2"> <!-- Tambah spasi internal -->
+                    <h2 class="text-base text-[#b6e070] font-bold">Website Profil </h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI merupakan situs web yang memuat informasi tentang sejarah, kondisi wilayah, struktur pemerintahan, potensi lokal, dan pelaku UMKM.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Developer</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat oleh Trisman Tegar Wiratama, Mahasiswa KKN Universitas Hasanuddin Gelombang 114 Kelurahan Watang Bacukiki pada Juli 2025.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#b6e070] font-bold">Harapan &amp; Tujuan</h2>
+                    <p class="text-xs text-gray-300">
+                        Website MAKKITAKI ini dibuat untuk tujuan menyediakan media informasi digital bagi Kelurahan Watang Bacukiki, mendukung promosi potensi dan UMKM lokal, serta memperluas jangkauan informasi hingga ke masyarakat luar.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
+                <p class="text-xs text-gray-400">
+                    © 2025 Kelurahan Watang Bacukiki - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
